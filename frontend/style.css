@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #0f0;
+    height: 100vh;
+    margin: 0;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna (verticalmente) */
+    width: 600px; /* Define a largura do contêiner */
+    height: 400px; /* Define a altura do contêiner */
+    background-color: #000;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #0f0; 
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    position: relative; /* Para posicionar o input na mesma linha da última mensagem */
+}
+
+#chat-container p {
+    margin: 0; /* Remove margem entre parágrafos */
+    padding: 0; /* Remove padding entre parágrafos */
+    font-size: 22px;
+}
+
+#input-container {
+    display: flex; /* Organiza o input e o texto na mesma linha */
+    color: #0f0;
+}
+
+#input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #0f0;
+    font-size: 22px;
+    width: 100%; /* Faz o input ocupar o restante da linha */
+}
+
+#input::placeholder {
+    color: #0f0;
+}
+
+.cursor {
+    width: 10px;
+    height: 1em; /* Ajusta a altura do cursor para combinar com o texto */
+    background-color: #0f0;
+    display: inline-block;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        background-color: transparent;
+    }
+    25% {
+        background-color: #0f0;
+    }
+}

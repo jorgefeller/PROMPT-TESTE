@@ -1,8 +1,8 @@
 const chatLog = [
-    { username: "Princ..", message: "PAI... e.eeu to aquii" },
-    { username: "Pr1nf", message: "SOCO .ç.. rRo" },
-    { username: "", message: "diretriz adicionada dados sendo reformulados" },
-    { username: "", message: "..." },
+    { username: "", message: "" },
+    { username: "", message: "" },
+    { username: "", message: "" },
+    { username: "", message: "" },
     { username: "", message: "" },
 ];
 
